@@ -1,0 +1,10 @@
+.wrappet {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-between;
+  background-color: rgb(20, 20, 20);
+}

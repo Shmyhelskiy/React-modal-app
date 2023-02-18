@@ -1,0 +1,15 @@
+.wrapper {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 201, 201);
+}
+.container {
+  display: flex;
+  font-size: 2em;
+  align-items: center;
+}
+.container p {
+  margin-left: 20px;
+}
