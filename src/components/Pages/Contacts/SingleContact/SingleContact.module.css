@@ -1,0 +1,32 @@
+.wrapper {
+  margin: 10%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  gap: 8px;
+  padding: 20px;
+  display: flex;
+  min-width: 500px;
+  min-height: 500px;
+  border-radius: 10px;
+  flex-direction: column;
+  border: 2px solid black;
+  background-color: rgb(136, 136, 240);
+  -webkit-box-shadow: 7px -7px 89px 9px rgba(113, 120, 237, 1);
+  -moz-box-shadow: 7px -7px 89px 9px rgba(113, 120, 237, 1);
+  box-shadow: 7px -7px 89px 9px rgba(113, 120, 237, 1);
+}
+.contact-gender {
+  width: 150px;
+}
+.container-info {
+  display: flex;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-left: 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: white;
+  justify-content: flex-start;
+}

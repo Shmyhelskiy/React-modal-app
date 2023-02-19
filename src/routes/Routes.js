@@ -6,7 +6,10 @@ import PublicationsPage from "../components/Pages/Publications/Publications.page
 import PhotoPage from "../components/Pages/Photo/Photo.page";
 import ContactsPage from "../components/Pages/Contacts/Contacts.page";
 import Notfound from "../components/Pages/Notfound/Notfound";
-import SingleContact from "../components/Pages/Contacts/contacts/SingleContact";
+import SingleContact from "../components/Pages/Contacts/SingleContact/SingleContact";
+import { contacts } from "../components/Pages/Contacts/Contacts.page";
+
+contacts.forEach((item, index) => (item.id = index));
 
 export const appRoutes = {
   home: {
@@ -40,9 +43,10 @@ const Routes = () => {
           <Route key={id} path={path} element={element} />
         ))}
         <Route path="*" element={<Notfound />} />
-        <Route path="/contacts" element={<ContactsPage />}>
-          <Route path=":userId" element={<SingleContact />} />
-        </Route>
+        <Route
+          path="/contacts/:userId"
+          element={<SingleContact cardData={contacts} />}
+        />
       </ReactRouterRoutes>
     </div>
   );

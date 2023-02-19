@@ -4,7 +4,7 @@ import Contact from "./contact/Contact";
 import Checkbox from "./Checkbox/Checkbox";
 
 const Сontracts = ({ contacts }) => {
-  contacts.forEach((item, index) => (item.id = index + 1));
+  contacts.forEach((item, index) => (item.id = index));
   const [contactsData] = useState(contacts),
     [serch, setSerch] = useState(""),
     [checkedOne, setCheckedOne] = useState(true),
@@ -28,7 +28,7 @@ const Сontracts = ({ contacts }) => {
   }
 
   return (
-    <div className={styles["wraper"]}>
+    <div className={styles["wrapper"]}>
       <h1>Contacts</h1>
       <div className={styles["input-container"]}>
         <div>
