@@ -1,5 +1,6 @@
 .container {
   gap: 8px;
+  min-height: 250px;
   width: 500px;
   margin: 40px;
   display: flex;
@@ -8,7 +9,7 @@
 }
 
 .image {
-  height: 200px;
+  height: 100%;
   width: 200px;
 }
 .container-content {

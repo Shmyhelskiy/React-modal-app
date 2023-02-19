@@ -5,7 +5,7 @@ import * as img from "../contacts/contact/image/image";
 
 const SingleContact = ({ cardData }) => {
   let { userId } = useParams();
-  console.log(cardData);
+
   return (
     <div className={styles["wrapper"]}>
       <div className={styles["container"]}>
